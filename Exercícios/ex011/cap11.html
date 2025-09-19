@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas, aúdio e vídeo</title>
+</head>
+<body>
+    <h1>Imagens flexíveis</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/metallica_masterofpuppets_300x300.jpg" type="image/jpeg">
+        <source media="(max-width: 1050px)" srcset="Imagens/metallica_masterofpuppets_700x700.jpg" type="image/jpeg">
+        <img src="Imagens/metallica_masterofpuppets_1000x1000.jpg" alt="A imagem flexível funciona">
+    </picture>
+    <h1>Áudio</h1>
+    <audio preload="metadata" controls loop>
+        <source src="Áudios/master_of_puppets.mp3" type="audio/mpeg">
+        <source src="Áudios/master_of_puppets.ogg" type="audio/ogg">
+        <source src="Áudios/master_of_puppets.wav" type="audio/wav">
+        <p>Seu navegador não suporta áudio <a href="Áudios/master_of_puppets.mp3" download="master_of_puppets.mp3" type="audio/mpeg"></a></p>
+    </audio>
+    <h1>Vídeo anexado</h1>
+    <video width="600" poster="Imagens/thumb.jpg" controls>
+        <source src="Vídeos/masterofpuppets_jh_riff.mp4" type="video/mp4">
+        <source src="Vídeos/masterofpuppets_jh_riff.webm" type="video/webm">
+        <source src="Vídeos/masterofpuppets_jh_riff.ogv" type="video/ogg">
+        <p>Infelizmente seu navegador não conseguiu carregar o vídeo.</p>
+    </video>
+    <h1>Vídeo incorporado</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1tohEy8Eib0?si=uv_vg2S8osEw8S83" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+</body>
+</html>
